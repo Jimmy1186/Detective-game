@@ -1,0 +1,158 @@
+
+
+body {
+ background-color: rgb(117, 74, 18);
+ font-family: sans-serif;
+}
+.game-title {
+ display: block;
+ text-align: center;
+ color: white;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ margin: 10px 10px;
+}
+
+.game-info {
+ color: white;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+}
+
+.game-container {
+ grid-template-areas: 
+ "witness1 clue1 conclusion1"
+ "witness2 clue2 conclusion2" ;
+ align-items: baseline;
+}
+
+.witness {
+ width: 100%;
+ grid-area: witness1;
+ text-align: center;
+ color: white;
+
+}
+
+.clue {
+ width: 100%;
+ grid-area: clue1;
+ grid-column: span 2;
+ text-align: center;
+ color: white;
+
+}
+
+.conclusion {
+ width: 100%;
+ grid-area: conclusion1;
+ text-align: center;
+ color: white;
+}
+
+.witness-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ grid-area: witness2;
+ display: flex;
+ align-items: flex-start;
+}
+
+.clue-container {
+ display: flex;
+ flex-wrap: wrap;
+ grid-area: clue2;
+ grid-column: span 2;
+ justify-content: center;
+ align-items: center;
+}
+
+.conclusion-container {
+ display: flex;
+ flex-direction: column;
+ grid-area: conclusion2;
+ grid-column: span 2;
+ display: flex;
+ justify-content: center;
+}
+.box-wid {
+ width: auto;
+ margin: 10px;
+ background-color: #FFEE4A;
+ font-weight: bold;
+ color: rgb(87, 87, 87);
+}
+
+.box {
+ width:200px; 	
+	
+ padding:10px; 	
+ margin: 10px;
+ border:2px rgb(109, 98, 98) dashed; 	
+ background-color: darkslategrey;
+ float:left; 	
+
+}
+
+.box-hig {
+ height:100px; 	
+}
+
+.box-col {
+ height:100px; 
+ background-color: turquoise;
+}
+
+.d-img {
+ border: 1px black dashed;
+ width: 200px;
+ height: 100px;
+}
+
+.btn {
+ height: 3rem;
+}
+
+@media (max-width:500px) {
+ .grid {
+  grid-template-columns: repeat(2,1fr);
+ }
+ .game-container {
+  grid-template-areas: 
+  "witness2 witness2"
+  "clue2 conclusion2";
+ }
+ .witness-container {
+  margin-left: 97px;
+  width: 100%;
+ }
+
+ .clue-container {
+  flex-direction: column;
+  
+ }
+ .conclusion-container {
+  flex-direction: column;
+  margin-top: -1007px;
+ }
+ .box {
+  width: 150px;
+ }
+ .d-img {
+  width: 150px;
+ }
+ .box-wid {
+  width: 100%; 	
+ }
+}
+
+@media (min-width:1024px){
+ .clue-container {
+  width: 500px;
+ }
+}

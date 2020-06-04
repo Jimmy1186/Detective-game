@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="normalize.css">
+ <link rel="stylesheet" href="detective-style.css">
+</head>
+<body>
+ <h1 class="game-title">Investigation wall</h1>
+ <div class="game-info"> 
+  <p>排出可能情況(拖移圖片)</p>
+    </div>
+ <div class="grid game-container">
+  <div class="witness-container">
+    <div class="witness">Witness</div>
+   <div class="box-wid">監視器：多數人帶大型背包往山上騎</div> 
+   <div class="box-wid">警察：屍體被肢解且裝於一個黑色登山包裡</div>
+   <div class="box-wid">法醫：頭骨有多處被鈍器擊打的傷痕 四肢在生前皆被利器平整肢解 </div> 
+   <div class="box-wid">
+    <p>小憨  :   與朋友有登山習慣  無犯罪前科<br>
+      口供 : 覺得那天天氣好爬一下就下山了<br>
+      附近居民:他常常來爬阿 當天只看到他獨自上山</p>
+    </div> 
+   <div class="box-wid">
+  <p>屁王 :  無登山習慣  大眾臉 無犯罪前科<br>
+     口供 : 人是我殺的!!<br>
+     附近居民:這個人上山時鬼鬼祟祟的 長這樣一定是兇手
+  </p></div>
+   <div class="box-wid">
+  <p>
+    皓宇哥 : 有登山習慣  成績優異  有傷害前科 <br>
+口供 : 我有看到小憨還跟他打招呼<br>
+ 附近居民:他常常來爬阿 當天和他媽上山
+  </p></div> 
+   
+  </div>
+  <div class="clue-container">
+
+    <div class="clue">Clue</div>
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img1" class="d-img" src="image/1.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img2" class="d-img" src="image/2.jpg"  draggable="true" ondragstart="Drag(event)"></div>
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img3" class="d-img" src="image/3.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img4" class="d-img" src="image/4.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img5" class="d-img" src="image/5.jpg"  draggable="true" ondragstart="Drag(event)"></div>
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img6" class="d-img" src="image/6.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img7" class="d-img" src="image/7.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img8" class="d-img" src="image/8.jpg"  draggable="true" ondragstart="Drag(event)"></div>
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img9" class="d-img" src="image/9.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img10" class="d-img" src="image/10.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img11" class="d-img" src="image/11.jpg"  draggable="true" ondragstart="Drag(event)"></div>
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img12" class="d-img" src="image/12.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img13" class="d-img" src="image/13.jpg"  draggable="true" ondragstart="Drag(event)"></div>
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img14" class="d-img" src="image/14.jpg"  draggable="true" ondragstart="Drag(event)"></div>
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img15" class="d-img" src="image/15.jpg"  draggable="true" ondragstart="Drag(event)"></div> 
+    <div class="box box-hig" ondrop="Drop(event)" ondragover="AllowDrop(event)"><img id="Img16" class="d-img" src="image/16.jpg"  draggable="true" ondragstart="Drag(event)"></div>  
+   </div>
+   <div class="conclusion-container">
+    <div class="conclusion">Conclusion</div>
+    <div class="box box-col" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div> 
+    <div class="box box-col" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div class="box box-col" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div> 
+    <div class="box box-col" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div> 
+    <div class="box box-col" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <div class="box box-col" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div> 
+    <div class="box box-col" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <button class="btn" onclick="an()">檢查</button>
+   </div>
+ </div>
+   
+ <script src="detective.js"></script>
+</body>
+</html>
