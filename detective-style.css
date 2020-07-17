@@ -1,8 +1,9 @@
 
 
 body {
- background-color: rgb(117, 74, 18);
- font-family: sans-serif;
+ background-color: #21D4FD;
+ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+ font-family: Microsoft YaHei;
 }
 .game-title {
  display: block;
@@ -83,7 +84,9 @@ body {
 .box-wid {
  width: auto;
  margin: 10px;
- background-color: #FFEE4A;
+ background-color: #85FFBD;
+ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+ 
  font-weight: bold;
  color: rgb(87, 87, 87);
 }
@@ -93,8 +96,9 @@ body {
 	
  padding:10px; 	
  margin: 10px;
- border:2px rgb(109, 98, 98) dashed; 	
- background-color: darkslategrey;
+ background-color: #FFDEE9;
+ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+ 
  float:left; 	
 
 }
@@ -105,18 +109,53 @@ body {
 
 .box-col {
  height:100px; 
- background-color: turquoise;
+ background-color: #FFDEE9;
+ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+ 
+ 
 }
 
 .d-img {
- border: 1px black dashed;
  width: 200px;
  height: 100px;
 }
 
 .btn {
- height: 3rem;
+ border-radius: 6px;
+ border: none;
+ color: white;
+ font-size: 2rem;
+ text-align: center;
+ justify-content: center;
+ height: 5rem;
+ width:200px;
+ background-color: #4158D0;
+ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+ position: relative;
 }
+
+.anim {
+ animation-name: shak;
+ animation-duration: 1s;
+ 
+}
+
+@keyframes shak {
+ 0%   {background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+   left:0px; top:0px;color: red;}
+ 10%  { left:4px; top:0px;}
+ 20%  { left:0px; top:0px;}
+ 30%  { left:4px; top:0px;}
+ 40% { left:0px; top:0px;}
+ 50%   { left:0px; top:0px;}
+ 60%  { left:4px; top:0px;}
+ 70%  { left:0px; top:0px;}
+ 80%  { left:4px; top:0px;}
+ 90% { left:0px; top:0px;}
+ 100% { left:4px; top:0px;}
+}
+
 
 @media (max-width:500px) {
  .grid {
@@ -155,18 +194,4 @@ body {
  .clue-container {
   width: 500px;
  }
-}
-
-#Img1 {
- background-image: url('image/1.jpg');
- background-size: contain;
-}
-
-#Img2 {
- background-image: url('image/2.jpg');
- background-size: cover;
-}
-
-.box:hover {
- background-color:#2f4f4f30 ;
 }

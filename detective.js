@@ -1,21 +1,21 @@
-// function AllowDrop(event){
-//     event.preventDefault();
-// }
-// function Drag(event){
-//     event.dataTransfer.setData("text",event.currentTarget.id);
-// }
-// function Drop(event){
-//     event.preventDefault();
-//     var data=event.dataTransfer.getData("text");
-//     event.currentTarget.appendChild(document.getElementById(data));
-// }
+function AllowDrop(event){
+    event.preventDefault();
+}
+function Drag(event){
+    event.dataTransfer.setData("text",event.currentTarget.id);
+}
+function Drop(event){
+    event.preventDefault();
+    var data=event.dataTransfer.getData("text");
+    event.currentTarget.appendChild(document.getElementById(data));
+}
 
 
 
-
+var btn = document.getElementsByClassName("btn")[0];
 
 var answer = ["Img11", "Img7", "Img16", "Img15", "Img2", "Img9", "Img3"]
-
+var delayInMilliseconds = 1000;
 
 
 function an(){
@@ -38,6 +38,13 @@ function an(){
      if(JSON.stringify(answer)==JSON.stringify(aaray)){
         alert("Thats Right!!!")
     }
+    else{
+        setTimeout(function(){
+        btn.classList.add('anim');
+        }, 100); 
+        btn.classList.remove('anim');
+    }
  
      
 }
+
